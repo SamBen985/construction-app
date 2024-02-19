@@ -1,0 +1,95 @@
+.wwd {
+  background-color: #1d3041;
+  color: white;
+  margin-top: -18px;
+}
+.img2 {
+  background-image: url("../assets/foreman.jpg");
+  background-attachment: fixed;
+  background-position: center right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 50px;
+  width: 50vw;
+  height: 90vh;
+}
+p {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+
+  font-style: normal;
+}
+
+.btn {
+  height: 50px;
+  width: 150px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.title {
+  font-family: "Vollkorn SC", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.left {
+  width: 55vw;
+}
+.right {
+  width: 50vw;
+}
+.right2 {
+  width: 30vw;
+  margin: auto;
+}
+
+.left p {
+  width: 25vw;
+}
+
+.hr2 {
+  width: 20%;
+  border-width: 5px;
+}
+
+@media screen and (max-width: 450px) {
+  .img2 {
+    display: none;
+  }
+  .right {
+    display: none;
+  }
+  .right2 {
+    width: 100%;
+  }
+  .title {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+  .title p {
+    width: 100%;
+  }
+  .wwd {
+    text-align: center;
+  }
+  .text-secondary {
+    width: 90vw;
+    margin: auto;
+  }
+  .btn {
+    margin: auto;
+  }
+  .hr2 {
+    margin: auto;
+  }
+  .txtx {
+    margin: auto;
+  }
+  .left {
+    margin-left: auto;
+  }
+  .disbtn {
+    display: none;
+  }
+}

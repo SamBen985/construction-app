@@ -1,0 +1,39 @@
+/* Add styles to position home1 and adjust z-index for navbar */
+.home1 {
+  background-image: url("../assets/home1.jpeg");
+  /* Add other styles for your home1 div */
+}
+
+.navbar {
+  background-color: #1d3041;
+  z-index: 10000;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  box-shadow: 0 2px 3px -3px gray;
+}
+
+.navbar a {
+  color: white;
+}
+.navbar-nav .dropdown-menu {
+  background-color: #1d3041;
+}
+.navbar-toggler-icon {
+  color: white;
+}
+
+.navbar a:hover {
+  background-color: white;
+}
+
+.navbar a:focus {
+  color: rgb(143 8 8 / 80%);
+  background-color: white;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  margin-top: -15px;
+}

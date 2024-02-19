@@ -1,0 +1,67 @@
+.services-bg {
+  background-color: #1d3041;
+  height: 100vh;
+  width: 100vw;
+}
+.h-title {
+  width: 50%;
+}
+.h-text {
+  width: 50%;
+}
+
+.s-title {
+  color: white;
+  font-family: "Vollkorn SC", serif;
+}
+.co {
+  color: white;
+}
+.box {
+  width: 30vw;
+  height: 40vh;
+  margin: 10px; /* Add margin for spacing between boxes */
+  background-color: #0e1821;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  justify-content: center;
+  align-items: center;
+}
+
+.box img {
+  height: auto;
+  filter: brightness(0) invert(1) sepia(1) hue-rotate(200deg) saturate(3)
+    brightness(5);
+  /* Adjust the filter for the desired color */
+  color: #0080b3; /* Set the color for the text within the div */
+}
+.box > div {
+  margin-top: 10px;
+  color: white; /* Set the title color to white */
+}
+.btn {
+  height: 50px;
+  width: 150px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+@media screen and (max-width: 450px) {
+  .h-title {
+    width: 100%;
+    text-align: center;
+  }
+  .h-text {
+    width: 100%;
+    text-align: center;
+  }
+  .box {
+    width: 27vw;
+  }
+
+  .d-flex #serbtn {
+    display: none;
+  }
+}

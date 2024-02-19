@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Router, Routes } from "react-router-dom";
+import "./App.css";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import HomePage from "./pages/HomePage";
+import ServicesPage from "./pages/ServicesPage";
+import WWD from "./components/WWD";
+import WWA from "./components/WWA";
+import Contact from "./pages/Contact";
 
 function App() {
+  const handleLinkClick = () => {
+    window.scrollTo(0, 0);
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/services" element={<ServicesPage />} />
+        <Route
+          path="/about"
+          element={<WWD handleLinkClick={handleLinkClick} />}
+        />
+        <Route path="/why" element={<WWA />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+      <Footer handleLinkClick={handleLinkClick} />
+    </>
   );
 }
 

@@ -1,0 +1,29 @@
+.container2 {
+  width: 85vw;
+  margin: auto;
+  font-family: "Work Sans", sans-serif;
+}
+
+.footer-bg {
+  background-color: #1d3041;
+  height: 45vh;
+  width: 100%;
+  margin-top: -20px;
+}
+
+.hr3 {
+  color: white;
+  border: 1px solid white;
+}
+.rights h6 {
+  color: white;
+}
+
+@media screen and (max-width: 450px) {
+  .d-flex .con-btn {
+    display: none;
+  }
+  .footer-bg {
+    height: 100%;
+  }
+}

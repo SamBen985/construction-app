@@ -1,0 +1,18 @@
+.services_bg {
+  background-color: #1d3041;
+}
+
+.image img {
+  width: 90%;
+}
+
+.png {
+  height: auto;
+  filter: brightness(0) invert(1) sepia(1) hue-rotate(200deg) saturate(3)
+    brightness(5);
+  /* Adjust the filter for the desired color */
+  color: #0080b3; /* Set the color for the text within the div */
+}
+.para {
+  width: 90%;
+}
